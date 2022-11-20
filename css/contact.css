@@ -1,0 +1,68 @@
+/*section1*/
+.fa {
+    background-color: brown;
+    color: #fff;
+    padding: 34px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.contact {
+    width: 21%;
+    align-items: center;
+    text-align: center;
+}
+.contact p {
+    margin-top: 20px;
+    font-size: 19px;
+}
+/*section2*/
+.container.form {
+    background-color: #fff;
+    padding: 0;
+    margin-bottom: 30px;
+}
+.map {
+    width: 43%;
+    height: 100%;
+    display: flex;
+}
+.right-form{
+    width: 52%;
+    padding-right: 210px;
+}
+.right-form h3 {
+    font-size: 30px;
+    width: 100%;
+    padding-top: 20px;
+}
+.name-address{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.form-each {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid brown;
+}
+textarea {
+    height: 120px; 
+    border: none;
+    border-bottom: 2px solid brown;
+    padding-top: 10px;
+}
+.label {
+    color:brown;
+    margin-top: 10px ;
+}
+button {
+    color: #fff;
+    background-color: brown;
+    padding: 20px; 
+    border: none;
+    margin-top: 10px;
+}
