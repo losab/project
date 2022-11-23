@@ -1,6 +1,6 @@
 /*section1*/
 .fa {
-    background-color: brown;
+    background-color: #911b19;
     color: #fff;
     padding: 34px;
     border-radius: 50%;
@@ -47,21 +47,21 @@
 input {
     height: 40px;
     border: none;
-    border-bottom: 2px solid brown;
+    border-bottom: 2px solid #911b19;
 }
 textarea {
     height: 120px; 
     border: none;
-    border-bottom: 2px solid brown;
+    border-bottom: 2px solid #911b19;
     padding-top: 10px;
 }
 .label {
-    color:brown;
+    color:#911b19;
     margin-top: 10px ;
 }
 button {
     color: #fff;
-    background-color: brown;
+    background-color: #911b19;
     padding: 20px; 
     border: none;
     margin-top: 10px;

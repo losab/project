@@ -1,0 +1,134 @@
+
+.about-secondary {
+        height: 69vh;
+        min-height: 280px;
+        max-height: 540px;
+    
+}
+/*section*/
+.priorites {
+    height: 220px;
+    background-color: #997070;
+    display: flex;
+    justify-content: center;
+}
+.priorites-box{
+    color: #ebd5d3;
+    width: 385px;
+    display: flex;
+    justify-content: center;
+}
+.priorites-bos:nth-child(1) {
+    background-color:#997070 ;
+}
+.priorites-box:nth-child(2) {
+    background-color: #946c6c;
+}
+.priorites-box:nth-child(3) {
+    background-color: #876363;
+}
+.left-item {
+    color: #faeeed;
+    font-size: 65px;
+    padding-top: 75%;
+    padding-right: 15px;
+}
+.priorites-box h3 {
+    font-size: 22px;
+    width: 200px;
+}
+.priorites-box p {
+    width: 210px;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.priorites-inside-box {
+    text-align: center;
+    padding-top: 44px;
+}
+/*section*/
+.about-box {
+    margin-top: 50px;
+}
+.about-box img {
+    width:530px ;
+    height: 480px;
+}
+.about-right { 
+    width: 600px;
+    height: 480px;
+    padding: 30px;
+    align-items: center;
+}
+.about-box h3 {
+    font-size: 23px;
+    color: #911b19;
+}
+.about-box  p {
+    font-size: 20px;
+    width: 100%;
+    padding: 5px 0;
+}
+.p-box {
+    padding:28px 0;
+    color: #878282;
+}
+.about-box h4 {
+    font-size: 35px;
+    padding: 15px 0;
+    font-weight: bold;
+}
+.about-box h5 {
+    font-size: 23px;
+    padding-top: 40px;
+}
+.about-box h5 span {
+    color: #911b19;
+}
+/*section*/
+.feedback {
+    background-image: url('../images/alcoholbar.webp');
+    background-size: cover;
+    background-position:center;
+    background-attachment:fixed;
+    z-index: 1000;
+    height: 80vh;
+   filter: brightness(70%);
+}
+.feedback-box {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.clients-box {
+    display: flex;
+    padding-top: 100px;
+    padding-right: 0;
+    align-items: center;
+   
+}
+.feedback-box h3{
+    font-size: 20px;
+}
+.feedback-box h1{
+    font-size: 40px;
+    padding-top: 20px;
+}
+.clients-box p {
+    width: 90%;
+    font-size: 18px;
+    margin: 0 auto;
+}
+.clients-box img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.client {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

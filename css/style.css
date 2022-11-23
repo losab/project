@@ -82,6 +82,7 @@ a:visited {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-4deg);
+    animation: reveal 0.95s ease-out;
 }
 .about h1 {
     color: #fff;
@@ -173,4 +174,15 @@ a:visited {
 }
 .fa-facebook {
     margin: 0 5px;
+}
+@keyframes reveal {
+    from{
+        opacity: 0;
+        transform: translate(-50%, -40%) rotate(-4deg);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(-4deg);
+
+    }
 }
