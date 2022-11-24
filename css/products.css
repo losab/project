@@ -1,0 +1,70 @@
+/*section*/
+.left-block {
+    width: 80%;
+}
+.pruducts-text-box form {
+    width:100%;
+	height:auto;
+	overflow:hidden;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+.pruducts-text-box form option {
+    background-color: #e3e1e1;
+    
+}
+.products-box {
+    width: 31%;
+}
+.pruducts-text-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px ;
+}
+.pruducts-text-box h3 {
+    font-size: 20px;
+}
+.right-block {
+    height: 500px;
+    margin-top: 30px;
+    width: 230px;
+    margin-left: 20px;
+}
+.right-block h4 {
+    font-size: 24px;
+}
+.brends-box  div {
+   border-bottom: 2px solid #911b19;
+    margin: 18px 0;
+}
+.brends-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.blog-box div {
+    display: flex;
+    justify-content: space-between;
+}
+.blog-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.blog-box p {
+    width: 140px;
+    font-size: 17px;
+}
+.blog-box img {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+}
+.date p {
+    color: #a36c6c;
+    font-size: 13px;
+    margin-top: 10px;
+}
