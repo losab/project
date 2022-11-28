@@ -88,18 +88,21 @@
 /*section*/
 .feedback {
     background-image: url('../images/alcoholbar.webp');
+    
     background-size: cover;
     background-position:center;
     background-attachment:fixed;
-    filter: brightness(40%);
     z-index: 1000;
-    height: 80vh;
+    height: 100%;
+    padding: 80px 0;
 }
 .feedback-box {
     color: #fff;
     text-align: center;
     flex-direction: column;
-    padding-top: 100px;
+    padding: 80px 40px;
+    border: 3px solid #f1f1f1;
+    backdrop-filter: blur(2px);
 }
 .clients-box {
     display: flex;
