@@ -1,0 +1,21 @@
+@media (max-width:952px) {
+    .about  {
+        width: 90%;
+    }
+    .products {
+        width: 33%;
+    }
+}
+@media (max-width:782px) {
+    .nav-ul {
+        display: none;
+    }
+    .bar {
+        display: block;
+    }
+}
+@media (max-width:575px) {
+    .footer-none {
+        display: none;
+    }
+}

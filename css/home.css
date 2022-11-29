@@ -1,5 +1,6 @@
 .main-products{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .products {
@@ -43,7 +44,7 @@
     justify-content: space-around;
 }
 .favs {
-    width: 21%;
+    max-width: 260px;
     text-align: center;
 }
 .favs img {

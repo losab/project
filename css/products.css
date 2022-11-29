@@ -1,6 +1,6 @@
 /*section*/
 .left-block {
-    width: 80%;
+    flex-wrap: wrap;
 }
 .pruducts-text-box form {
     width:100%;
@@ -15,7 +15,7 @@
     
 }
 .products-box {
-    width: 31%;
+    width: 300px;
 }
 .pruducts-text-box {
     width: 100%;
