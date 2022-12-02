@@ -50,6 +50,7 @@
     .contact {
         width: 50%;
     }
+
 }
 @media (max-width:1024px) {
     .form {
@@ -63,5 +64,13 @@
     .right-form {
         width: 100%;
         padding: 0 100px;
+    }
+}
+@media (max-width:560px) {
+    .about h1 {
+        font-size: 72px;
+    }
+    .background {
+        background-position: bottom;
     }
 }
