@@ -18,4 +18,50 @@
     .footer-none {
         display: none;
     }
+    .blog-box p {
+        display: none;
+    }
+    .blog-box .date p {
+        display: block;
+    }
+    .about-right {
+        width: 100%;
+    }
+}
+@media (max-width:1124px) {
+    .about-box {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:900px) {
+    .number-box div {
+        width: 50%;
+        align-items: center;
+    }
+    .clients-box {
+        flex-direction: column;
+    }
+    .client {
+        margin: 0 0 48px 0;
+    }
+}
+@media (max-width:700px) {
+    .contact {
+        width: 50%;
+    }
+}
+@media (max-width:1024px) {
+    .form {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .map ,
+    .map iframe {
+        width: 100%;
+    }
+    .right-form {
+        width: 100%;
+        padding: 0 100px;
+    }
 }

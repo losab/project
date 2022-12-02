@@ -44,12 +44,13 @@
     justify-content: space-around;
 }
 .favs {
-    max-width: 260px;
+    width: 260px;
     text-align: center;
 }
 .favs img {
     width: 100%;
     height: 350px;
+    border-radius: 10px;
 }
 .favs h4 {
     font-size: 23px;

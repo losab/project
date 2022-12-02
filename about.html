@@ -8,21 +8,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+    <div class="burger-menu" id="hamburger">
+        <i class="fa-regular fa-circle-xmark" id="x-mark"></i>
+        <div>
+            <ul class="nav-burger"> 
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a class="active"  href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="flex-header fixed">
         <div class="container">
         <a href="index.html">LIQUOR STORE </a>
           <nav class="navigation">
               <ul class="nav-ul"> 
-                  <li><a class="active" href="index.html">HOME</a></li>
+                  <li><a href="index.html">HOME</a></li>
                   <li><a href="products.html">PRODUCTS</a></li>
-                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a  class="active" href="about.html">ABOUT</a></li>
                   <li><a href="contact.html">CONTACT</a></li>
               </ul>
           </nav>
-          <div class="bar">
+          <div class="bar"id="hamburger-button" >
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
@@ -40,7 +53,7 @@
                         <li><a href="contact.html">CONTACT</a></li>
                     </ul>
                 </nav>
-                <div class="bar">
+                <div class="bar" id="hamburger-button-fixed">
                 <i class="fa-solid fa-bars"></i>
             </div>
             </div> 
@@ -52,7 +65,10 @@
             
         </header>
         <section>
-            <div class="priorites">
+            <div class="priorities-wrapper">
+                <button class="slider-button next-button"><i class="fa-solid fa-angle-right"></i></button>
+                <button class="slider-button prev-button"><i class="fa-solid fa-angle-left"></i></button>
+                <div class="priorites">
                 <div class="priorites-box">
                     <div>
                         <i class="fa-sharp fa-solid fa-headset left-item"></i>
@@ -80,6 +96,7 @@
                         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
         <section>
@@ -219,5 +236,7 @@
                 </div>
             </div>
         </footer>
+        <script src="./script.js"></script>
+        <script src="./about.js"></script>
 </body>
 </html>

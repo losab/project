@@ -51,12 +51,11 @@
     margin-top: 50px;
 }
 .about-box img {
-    width:530px ;
+    max-width:530px ;
     height: 480px;
 }
 .about-right { 
     width: 600px;
-    height: 480px;
     padding: 30px;
     align-items: center;
 }
@@ -88,7 +87,6 @@
 /*section*/
 .feedback {
     background-image: url('../images/alcoholbar.webp');
-    
     background-size: cover;
     background-position:center;
     background-attachment:fixed;
@@ -102,7 +100,7 @@
     flex-direction: column;
     padding: 80px 40px;
     border: 3px solid #f1f1f1;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
 }
 .clients-box {
     display: flex;
@@ -136,6 +134,7 @@
 /*section*/
 .number-box {
     text-align: center;
+    flex-wrap: wrap;
 }
 .number-box h3 {
     color: #911b19;
@@ -143,8 +142,65 @@
     margin-top: 19px;
 }
 .number-box p {
-    width: 180px;
     font-size: 18px;
     padding: 20px 0;
     text-transform: uppercase;
+}
+.priorities-wrapper .slider-button {
+    display: none;
+}
+
+@media (min-width: 1025px) {
+    .priorites {
+        transform: unset !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .priorities-wrapper {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .priorities-wrapper .slider-button {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0%, -50%);
+        z-index: 99;
+        width: 50%;
+        height: 100%;
+        border: none;
+        background: none;
+        opacity: 0;
+        transition: 0.25s;
+        text-align: left;
+        color: #fff;
+        font-size: 32px;
+        padding: 20px;
+        display: block;
+    }
+
+    .priorities-wrapper .slider-button.next-button {
+        position: absolute;
+        left: unset;
+        right: 0;
+        top: 50%;
+        transform: translate(0%, -50%);
+        text-align: right;
+    }
+    
+    .priorities-wrapper:hover .slider-button  {
+        opacity: 1;
+    }
+
+    .priorites {
+        justify-content: unset;
+        transition: 0.25s;
+    }
+
+    .priorites-box {
+        width: 100%;
+        min-width: 100%;
+    }
 }
