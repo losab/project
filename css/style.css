@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /*header*/
 body {
     background-color: #e3e1e1;
@@ -17,6 +24,8 @@ a:visited {
     top: 0;
 }
 .burger-menu.visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .background {
@@ -40,8 +49,12 @@ a:visited {
     width: 80%;
     margin: auto;
     padding: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .container a,
 .container a:visited {
@@ -50,6 +63,8 @@ a:visited {
 nav a.active,
 nav a:hover {
     border-bottom: 2px solid #fff;
+    -webkit-transition:0.15s ;
+    -o-transition:0.15s ;
     transition:0.15s ;
 
 }
@@ -57,8 +72,12 @@ nav a:hover {
     z-index: 9999999;
 }
 .flex-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between; 
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; 
    
 }
 .flex-header.fixed {
@@ -68,6 +87,8 @@ nav a:hover {
     z-index: 9;
 }
 .nav-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
    
 }
@@ -89,19 +110,27 @@ nav a:hover {
     color: #fff;
 }
 .nav-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     text-align: center;
 }
 .nav-burger li {
     position: relative;
     left: -80px;
     opacity: 0;
-    animation: revealLi 1.25s forwards;
+    -webkit-animation: revealLi 1.25s forwards;
+            animation: revealLi 1.25s forwards;
     
 }
 .nav-burger li a {
@@ -116,12 +145,15 @@ nav a:hover {
 
 }
 .nav-burger li:nth-child(2) {
-    animation-delay: 0.25s;
+    -webkit-animation-delay: 0.25s;
+            animation-delay: 0.25s;
 }
 .nav-burger li:nth-child(3) {
-    animation-delay: 0.50s;
+    -webkit-animation-delay: 0.50s;
+            animation-delay: 0.50s;
 }.nav-burger li:nth-child(4) {
-    animation-delay: 0.75s;
+    -webkit-animation-delay: 0.75s;
+            animation-delay: 0.75s;
 }
 .fa-circle-xmark {
     font-size: 29px;
@@ -138,8 +170,11 @@ nav a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(-4deg);
-    animation: reveal 0.95s ease-out;
+    -webkit-transform: translate(-50%, -50%) rotate(-4deg);
+        -ms-transform: translate(-50%, -50%) rotate(-4deg);
+            transform: translate(-50%, -50%) rotate(-4deg);
+    -webkit-animation: reveal 0.95s ease-out;
+            animation: reveal 0.95s ease-out;
 }
 .about h1 {
     color: #fff;
@@ -152,8 +187,12 @@ nav a:hover {
     width: 180px;
     font-size: 18px;
     padding-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: auto;
 }
 .about-container button{
@@ -165,7 +204,10 @@ nav a:hover {
 .about-container button.readmore {
     background-color: transparent;
     border: 1px solid #fff;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
     transition: 0.25s;
 }
 .about-container button.readmore:hover {
@@ -200,6 +242,8 @@ nav a:hover {
     padding: 8px;
     background-color:antiquewhite;
     border-radius: 50%;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
     transition: 0.25s;
 }
 .fa-brands:hover {
@@ -233,23 +277,52 @@ nav a:hover {
     margin: 0 5px;
 }
 .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
+}
+
+@-webkit-keyframes reveal {
+    from{
+        opacity: 0;
+        -webkit-transform: translate(-50%, -40%) rotate(-4deg);
+                transform: translate(-50%, -40%) rotate(-4deg);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate(-50%, -50%) rotate(-4deg);
+                transform: translate(-50%, -50%) rotate(-4deg);
+
+    }
 }
 
 @keyframes reveal {
     from{
         opacity: 0;
-        transform: translate(-50%, -40%) rotate(-4deg);
+        -webkit-transform: translate(-50%, -40%) rotate(-4deg);
+                transform: translate(-50%, -40%) rotate(-4deg);
     }
     to {
         opacity: 1;
-        transform: translate(-50%, -50%) rotate(-4deg);
+        -webkit-transform: translate(-50%, -50%) rotate(-4deg);
+                transform: translate(-50%, -50%) rotate(-4deg);
 
+    }
+}
+@-webkit-keyframes revealLi {
+    to {
+        left: 0;
+        opacity: 1;
     }
 }
 @keyframes revealLi {

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (max-width:952px) {
     .about  {
         width: 90%;
@@ -30,17 +37,27 @@
 }
 @media (max-width:1124px) {
     .about-box {
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 }
 @media (max-width:900px) {
     .number-box div {
         width: 50%;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .clients-box {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .client {
         margin: 0 0 48px 0;
@@ -54,8 +71,13 @@
 }
 @media (max-width:1024px) {
     .form {
-        flex-direction: column-reverse;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .map ,
     .map iframe {
@@ -75,5 +97,9 @@
     }
     .question {
         display: none;
+    }
+    .products {
+        width: 50%;
+        margin: 0 0 10px 0;
     }
 }
