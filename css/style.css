@@ -33,11 +33,12 @@ a:visited {
     background-size: cover;
     background-position:center;
     background-attachment:fixed;
-    z-index: 1000;
+    z-index: 9999999;
     height: 100vh;
     min-height: 560px;
     max-height: 1080px;
     position: relative;
+
 }
 .background.secondary {
     height: 55vh;
@@ -69,7 +70,7 @@ nav a:hover {
 
 }
 .header {
-    z-index: 9999999;
+    z-index: 999;
 }
 .flex-header {
     display: -webkit-box;
@@ -84,13 +85,12 @@ nav a:hover {
     width: 100%;
     background-color:#9e9090; 
     position: fixed;
-    z-index: 9;
+    z-index: 9999;
 }
 .nav-ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-   
 }
 .nav-ul li {
     margin-right: 49px; 
@@ -184,7 +184,6 @@ nav a:hover {
     margin: auto;
 }
 .about-container {
-    width: 180px;
     font-size: 18px;
     padding-top: 20px;
     display: -webkit-box;
@@ -192,16 +191,18 @@ nav a:hover {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
+            justify-content: center;
     margin: auto;
 }
-.about-container button{
+.about-container div{
+    width: 100%;
+    max-width: fit-content;
     background-color: #911b19;
     padding: 10px;
     border: 1px solid #911b19;
     color: #fff;
 }
-.about-container button.readmore {
+.about-container div.readmore {
     background-color: transparent;
     border: 1px solid #fff;
     -webkit-box-sizing: border-box;
@@ -209,8 +210,9 @@ nav a:hover {
     -webkit-transition: 0.25s;
     -o-transition: 0.25s;
     transition: 0.25s;
+    margin-left: 20px;
 }
-.about-container button.readmore:hover {
+.about-container div.readmore:hover {
     background-color: #911b19;
     padding: 10px;
     border: 1px solid #911b19;

@@ -110,3 +110,14 @@
         margin: 0 auto;
     }
 }
+@media (max-width:320px) {
+    .about h1 {
+        font-size: 48px;
+    }
+    .products {
+        width: 100%;
+    }
+    .flex-box {
+        display: none;
+    }
+}
